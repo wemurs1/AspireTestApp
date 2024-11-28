@@ -11,4 +11,8 @@
     <ProjectReference Include="..\AspireTestApp.ServiceDefaults\AspireTestApp.ServiceDefaults.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Aspire.StackExchange.Redis.OutputCaching" Version="9.0.0" />
+  </ItemGroup>
+
 </Project>

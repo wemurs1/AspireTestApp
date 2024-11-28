@@ -19,6 +19,8 @@ builder.Services.AddHttpClient<WeatherApiClient>(client =>
         client.BaseAddress = new("https+http://apiservice");
     });
 
+builder.AddRedisOutputCache("cache");
+
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
